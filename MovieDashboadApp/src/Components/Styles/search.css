@@ -1,0 +1,40 @@
+@import "../../models/color-palette.css";
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px 32px 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 200px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.reset-button {
+  position: absolute;
+  right: 32px;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.reset-button:hover {
+  color: #ff0000; /* Red color on hover */
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    width: 100%;
+  }
+}

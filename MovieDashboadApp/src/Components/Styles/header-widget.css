@@ -1,0 +1,55 @@
+@import "../../models/color-palette.css";
+
+.header-widget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.header-title {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.nav-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.nav-container a{
+  color: var(--complementary-color);
+}
+
+.nav-container a:hover {
+  color: var(--accent-color);
+}
+
+.rating-input {
+    width: 50px;
+    padding: 4px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1em;
+  }
+
+@media (max-width: 768px) {
+  .header-widget {
+    flex-direction: column;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
